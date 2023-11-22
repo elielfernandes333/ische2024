@@ -1,0 +1,46 @@
+
+
+.cobalt, .bg-cobalt {
+    background-color: #303235; /* Azul-cobalto */
+    color: white; /* Cor do texto para contrastar com o fundo */
+}
+
+.grey-text {
+    color: grey;
+}
+
+
+.af {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.image {
+    width: 10%;
+    height: 10%;
+}
+
+.imagem-logo {
+    width: 100px; /* Defina a largura desejada para as imagens */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção da imagem */
+}
+
+
+.aboutpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.aboutpage p {
+    font-size: 20%px;
+}
