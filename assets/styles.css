@@ -30,8 +30,8 @@
 }
 
 .imagem-logo {
-    width: 100px; /* Defina a largura desejada para as imagens */
-    height: auto; /* A altura será ajustada automaticamente para manter a proporção da imagem */
+    width: 100px; 
+    height: auto; 
 }
 
 
@@ -44,3 +44,17 @@
 .aboutpage p {
     font-size: 20%px;
 }
+    .box1 {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .box2 {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .box3 {
+        margin-right: 10px;
+    }
