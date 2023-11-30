@@ -386,5 +386,21 @@
         width: 33%;
         font-size: 0.8em;
     }
-
+    @media only screen and (max-width: 480px) {
+        .box1 {
+            display: flex;
+            justify-content: center; 
+        }
+    
+        .box2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .box3 {
+            margin-right: 10px;
+        }
+    }
  
