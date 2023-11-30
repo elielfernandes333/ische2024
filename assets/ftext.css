@@ -387,16 +387,38 @@
         font-size: 0.8em;
     }
     @media only screen and (max-width: 480px) {
-        .box1 {
-            display: flex;
-            justify-content: center; 
+        #header {
+            height: 80px;
         }
     
-        .box2 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
+        .submenu {
+            width: 100%;
+            padding: 10px;
+        }
+    
+        .intro {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+    
+        .post, .col-100 {
+            width: 100%;
+        }
+    
+        .col-65 {
+            width: 100%;
+            padding-right: 0;
+        }
+    
+        .map {
+            padding-bottom: 20px;
+        }
+    
+        .col-33-box {
+            width: 100%;
+            margin-bottom: 20px;
         }
     }
+    
  
