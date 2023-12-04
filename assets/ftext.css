@@ -36,7 +36,6 @@
 
     .box {
         border-bottom: solid 0px #3f51b5;
-        padding-bottom: 20px;
         height: auto;
         z-index: 999;
 
@@ -426,8 +425,6 @@
         #header,
         .submenu,
         .intro,
-        #content,
-        .box,
         .post {
             padding-left: 1%;
         }
