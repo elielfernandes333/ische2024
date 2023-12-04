@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // toggle mobile menu
+    //  menu
     $('[data-toggle="toggle-nav"]').on('click', function () {
         $(this).closest('nav').find($(this).attr('data-target')).toggleClass('hidden');
         return false;
@@ -9,33 +9,34 @@ $(document).ready(function () {
     // feather icons
     feather.replace();
 
-    // smooth scroll
+    //scroll
     var scroll = new SmoothScroll('a[href*="#"]');
+});
+var texto = "ISCHE 45: Diversity and (De)coloniality in The Histories of Education";
+var index = 0;
+var velocidade = 100;
 
-    // tiny slider
-    $('#slider-1').slick({
-        infinite: true,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next'),
-    });
+function exibirLetra() {
+    if (index < texto.length) {
+        document.getElementById("typing-text").innerHTML += texto.charAt(index);
+        index++;
+        setTimeout(exibirLetra, velocidade);
+    }
+}
 
-    $('#slider-2').slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        customPaging: function (slider, i) {
-            return '<div class="bg-white br-round w-1 h-1 opacity-50 mt-5" id=' + i + '> </div>'
-        },
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1
-            }
-        }, ]
-    });
+window.onload = function () {
+    exibirLetra();
+};
+//menulang
+document.addEventListener("DOMContentLoaded", function() {
+    var gtranslateDiv = document.createElement('div');
+    gtranslateDiv.className = 'gtranslate_wrapper';
+    document.body.appendChild(gtranslateDiv);
+
+    window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","fr","de","es","pt"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"pt":"brazil"}};
+
+    var gtranslateScript = document.createElement('script');
+    gtranslateScript.src = 'https://cdn.gtranslate.net/widgets/latest/float.js';
+    gtranslateScript.defer = true;
+    document.body.appendChild(gtranslateScript);
 });

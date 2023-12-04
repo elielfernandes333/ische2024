@@ -70,26 +70,8 @@
                         Up</span></div>We are coming to Brazil. Learn more…
             </div>
             <div>
+                <div class="typing-container">
                 <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900" id="typing-text"></h1>
-
-                <script>
-                    var texto = "ISCHE 45: DIVERSITY AND (DE)COLONIALITY IN THE HISTORIES OF EDUCATION";
-                    var index = 0;
-                    var velocidade = 100;
-
-                    function exibirLetra() {
-                        if (index < texto.length) {
-                            document.getElementById("typing-text").innerHTML += texto.charAt(index);
-                            index++;
-                            setTimeout(exibirLetra, velocidade);
-                        }
-                    }
-                    window.onload = function () {
-                        exibirLetra();
-                    };
-                </script>
-
-
             </div>
         </div>
     </section>
@@ -102,8 +84,7 @@
                     <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i
                             data-feather="archive" class="w-l5"></i></div>
                     <h4 class="white fw-600 fs-m3 mb-5">Registration</h4>
-                    <div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">Registration for the ISCHE 2024 conference in Natal, Brazil, is now open.
-                        The early registration period ends on May 10, 2024.</div>
+                    <div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">Conference registration for ISCHE 45 in Natal, Brazil, will open in April 2024 (in Conftool). Early registration rate ends on May 20, 2024.</div>
                     <a href="https://www.conftool.org/ische45/"
                         class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
                 </div>
@@ -113,7 +94,7 @@
                     <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i
                             data-feather="edit" class="w-l5"></i></div>
                     <h4 class="white fw-600 fs-m3 mb-5">Proposals</h4>
-                    <div class="indigo-lightest fw-600 fs-m1 opacity-50"> Prior to the proposal submission, each member of the panel/symposium should be registered (at least, with name, email and password) on the Conference electronic system;</div>
+                    <div class="indigo-lightest fw-600 fs-m1 opacity-50"> All submissions must be submitted using the 2024 online submission system Conftool. </div>
                     <a href="proposals.html"
                         class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
                 </div>
@@ -123,7 +104,7 @@
                     <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i
                             data-feather="calendar" class="w-l5"></i></div>
                     <h4 class="white fw-600 fs-m3 mb-5">Submission Deadline</h4>
-                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">Submission deadline for Paedagogica Historica.</div>
+                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">Deadline for submissions is January 31, 2024.</div>
                     <a href="dates.html"
                         class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
                 </div>
@@ -144,7 +125,6 @@
         </div>
 
     </section>
-
     <!-- footer -->
     <footer class="bg-indigo-lightest-10 " style="height: 3%; padding: 1% 1% 1% 1%;">
         <div class="flex md-flex-row">
@@ -174,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-100pc md-w-25pc" style="margin-left: 5%; padding-top: 2%;">
+            <div class="w-100pc md-w-25pc" id="footes">
                 <div class="flex-column w-75pc md-w-100pc mx-auto">
                     <p class="white opacity-70"><strong>EDUCATION CENTER</strong></p>
                     <p class="white opacity-70">University campus UFRN - Lagoa Nova</p>
@@ -205,6 +185,7 @@
     <script
         src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="assets/js/script.js"></script>
+    
 </body>
 
 </html>
