@@ -26,17 +26,4 @@ function exibirLetra() {
 
 window.onload = function () {
     exibirLetra();
-};
-//menulang
-document.addEventListener("DOMContentLoaded", function() {
-    var gtranslateDiv = document.createElement('div');
-    gtranslateDiv.className = 'gtranslate_wrapper';
-    document.body.appendChild(gtranslateDiv);
-
-    window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","fr","de","es","pt"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"pt":"brazil"}};
-
-    var gtranslateScript = document.createElement('script');
-    gtranslateScript.src = 'https://cdn.gtranslate.net/widgets/latest/float.js';
-    gtranslateScript.defer = true;
-    document.body.appendChild(gtranslateScript);
-});
+}
