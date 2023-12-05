@@ -429,10 +429,14 @@
         .post,
         footer,
         .navbar,
+        #home,
+        .hero-section,
+        .typing-container,
         body {
             height: auto;
             width: 100%;
         }
+
         #page,
         #header,
         .submenu,
@@ -440,58 +444,80 @@
         .post {
             padding-left: 1%;
         }
-    
+
         .post * {
             box-sizing: border-box;
         }
-    
+
         footer {
             align-items: center;
         }
-    
+
         .submenu {
             padding: 10px;
         }
-    
+
         .intro {
             text-align: center;
             max-width: 100%;
         }
-    
+
         .col-100,
         .post,
         .col-65,
         .col-33-box,
         footer {
             width: 100%;
-            padding: 0; 
-            margin: 0; 
+            padding: 0;
+            margin: 0;
         }
-    
+
         .col-65 {
             padding-right: 0;
         }
-    
+
         .map {
             padding-bottom: 20px;
         }
-    
+
         .col-33-box {
-            width: 100%; 
+            width: 100%;
             margin-bottom: 20px;
         }
+
         .w-100pc {
             margin-left: 0;
             padding-top: 2%;
         }
+
         .flex-column {
-            width: 100%; 
+            width: 100%;
         }
+
         #footes {
             display: none;
         }
+
         #typing-text {
-            font-size: 1.5em; 
-            line-height: 1.2em; 
+            font-size: 20px;
+            line-height: 1.2em;
+            width: 387px;
+        }
+
+        .pdf {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .post,
+        .box,
+        .col-33 {
+            width: 100%;
+            padding-bottom: 1%;
+        }
+        h1, .post, .col-100, .map, iframe {
+            width: 387px;
         }
     }
