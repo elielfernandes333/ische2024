@@ -520,4 +520,8 @@
         h1, .post, .col-100, .map, iframe {
             width: 387px;
         }
+        main {
+            display: flex;
+            flex-direction: column;
+        }
     }
