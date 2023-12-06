@@ -12,7 +12,7 @@ $(document).ready(function () {
     //scroll
     var scroll = new SmoothScroll('a[href*="#"]');
 });
-var texto = "ISCHE 45: Diversity and (De)coloniality in The Histories of Education";
+var texto = "ISCHE 45: (De)coloniality and Diversity in Histories of Education";
 var index = 0;
 var velocidade = 100;
 
