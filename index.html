@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/ftext.css">
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/pop.css">
 </head>
 
 <body class="bg-cobalt muli">
@@ -124,8 +125,36 @@
             <a href="visitingNatal.html"
                 class="bg-white black px-5 py-3 absolute right-0 bottom-0 hover-bg-black hover-white ease-500 flex justify-center items-center after-arrow-right no-underline fs-m1"></a>
         </div>
-
     </section>
+
+    <div class="container">
+        <div class="pop-up" id="pop-up">
+            <img src="assets/images/date.png" alt="calendar-clock">
+
+            <h2 class="title">Important!</h2>
+
+            <p class="desc">The submission deadline has been updated to February 10, 2024.</p>
+
+            <button class="close_pop-up_button" type="submit" onclick="handlePopup(false)">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const popup = document.getElementById('pop-up');
+
+        function handlePopup(open) {
+            if (open)
+                popup.classList.add('opened');
+            else
+                popup.classList.remove('opened');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            handlePopup(true);
+        });
+    </script>
     <!-- footer -->
     <footer class="bg-indigo-lightest-10 " style="height: 3%; padding: 1% 1% 1% 1%;">
         <div class="flex md-flex-row">
